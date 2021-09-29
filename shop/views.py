@@ -113,7 +113,7 @@ def register(request):
                         messages.success(request, 'You are now logged in.')
                         return redirect('shop:product_list')
                         user.save()
-                        messages.success(request, 'You are registered successfully.')
+                        messages.success(request, 'Congrats, You are registered successfully.')
                         return redirect('shop:login')
             else:
                 messages.error(request, 'Password do not match')
